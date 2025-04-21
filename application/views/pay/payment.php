@@ -60,8 +60,8 @@ $data = [
     "image"             => "https://s29.postimg.org/r6dj1g85z/daft_punk.jpg",
     "prefill"           => [
     "name"              => "Vikrant Kekan",
-    "email"             => "vikrantk.3dotsdesign@gmail.com",
-    "contact"           => "9421973844",
+    "email"             => "vikrantkekan9@gmail.com",
+    "contact"           => "00000",
     ],
     "notes"             => [
     "address"           => "Hello World",

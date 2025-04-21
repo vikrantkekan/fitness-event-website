@@ -1,8 +1,8 @@
 <?php
 
 
-$keyId='rzp_test_G7t2WZ9ImInHoL';
-$keySecret='1AvUKU98l7ke6vmdzjaxs175';
+$keyId='';
+$keySecret='';
 $displayCurrency='INR';
 
 

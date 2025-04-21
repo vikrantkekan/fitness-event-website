@@ -142,7 +142,7 @@ $this->load->view('footer/footer');
 
 //$data['allpostdata']=$this->input->post();
 
-    $data['title']='Champ Endurance: Home';
+    $data['title']='Endurance: Home';
 
     $cart = $this->session->userdata('cart');
     $data['cart']=$cart;
@@ -221,7 +221,7 @@ if($mailto_email){
 
 //sms ticket
 
-$key = "xeRlvjRrCuUODAB9";  
+$key = "";  
 $mbl=$itm_ord['contact'];
 
 $otp=mt_rand(111111,999999);
@@ -234,9 +234,9 @@ $msg='Dear Customer, You have successfully booked your ticket for '.$var1.' on '
 
 $message_content=urlencode($msg);
 
-$senderid="CHPEND"; 
+$senderid=""; 
 $route= 1;
-$templateid="1707165520144488150";
+$templateid="";
 
 $url = "https://www.hellotext.live/vb/apikey.php?apikey=$key&senderid=$senderid&templateid=$templateid&number=$mbl&message=$message_content";
 
@@ -251,7 +251,7 @@ $output = file_get_contents($url);  /*default function for push any url*/
 
 
 $this->email->set_mailtype("html");
-$this->email->from('info@champendurance.com', 'Champ Endurance');
+$this->email->from('info@mail.com', ' Endurance');
 
 $this->email->to($mailto_email);
 
@@ -262,8 +262,8 @@ $this->email->send();
 
 
 $this->email->set_mailtype("html");
-$this->email->from('info@champendurance.com', 'Champ Endurance');
-$this->email->to('info@champendurance.com.test-google-a.com','contact@3dotsdesign.in');
+$this->email->from('info@mail.com', 'mail Endurance');
+$this->email->to('info@mail.com.test-google-a.com','contact@mail.in');
 $this->email->subject('Ticket Booking details');
 $this->email->message($email_message2);
 $this->email->send();
@@ -372,8 +372,8 @@ if($mailto_email){
 //email send
 
 $this->email->set_mailtype("html");
-$this->email->from('info@champendurance.com', 'Champ Endurance');
-$this->email->to($mailto_email,'info@champendurance.com','contact@3dotsdesign.in','info@champendurance.com.test-google-a.com');
+$this->email->from('info@mail.com', 'mail Endurance');
+$this->email->to($mailto_email,'info@mail.com','contact@mail.in','info@mail.com.test-google-a.com');
  
 $this->email->subject('Ticket Booking details');
 $this->email->message($email_message2);
@@ -383,7 +383,7 @@ $this->email->send();
 
 
 
-$url="http://qr.champendurance.com/index.php?id=".$ord_data['merchant_order_id'];
+$url="http://qr.mail.com/index.php?id=".$ord_data['merchant_order_id'];
 
 $postData = array(
   "api_token_id" => "123456"

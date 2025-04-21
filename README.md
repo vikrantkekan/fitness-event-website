@@ -1,2 +1,2 @@
 # fitness-event-website
-A dynamic PHP-based website developed for fitness event organizer, showcasing endurance sports services, events, and brand identity.
+A full-featured PHP-based website for Champ Endurance with a public frontend for users and a secure admin panel for content and event management.
